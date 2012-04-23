@@ -1,0 +1,749 @@
+2012/03/26 05:22:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось открыть соединение с базой данных: SQLSTATE[28000] [1045] Access denied for user 'u229543015_ero'@'localhost' (using password: YES)' in /home/u229543015/public_html/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/u229543015/public_html/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/u229543015/public_html/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/u229543015/public_html/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/u229543015/public_html/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /home/u229543015/public_html/framework/gii/generators/model/ModelCode.php(54): CModule->__get('db')
+#5 /home/u229543015/public_html/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /home/u229543015/public_html/framework/gii/CCodeGenerator.php(152): CFormModel->__construct()
+#7 /home/u229543015/public_html/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /home/u229543015/public_html/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /home/u229543015/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/u229543015/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /home/u229543015/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/u229543015/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#13 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/model')
+#14 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/u229543015/public_html/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model
+HTTP_REFERER=http://eromob.16mb.com/index.php?r=gii/module
+---
+2012/03/26 05:37:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось открыть соединение с базой данных: SQLSTATE[28000] [1045] Access denied for user 'u229543015_ero'@'localhost' (using password: YES)' in /home/u229543015/public_html/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/u229543015/public_html/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/u229543015/public_html/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/u229543015/public_html/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/u229543015/public_html/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /home/u229543015/public_html/framework/gii/generators/model/ModelCode.php(54): CModule->__get('db')
+#5 /home/u229543015/public_html/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /home/u229543015/public_html/framework/gii/CCodeGenerator.php(152): CFormModel->__construct()
+#7 /home/u229543015/public_html/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /home/u229543015/public_html/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /home/u229543015/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/u229543015/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /home/u229543015/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/u229543015/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#13 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/model')
+#14 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/u229543015/public_html/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model
+HTTP_REFERER=http://eromob.16mb.com/index.php?r=gii
+---
+2012/03/26 05:51:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=user
+---
+2012/03/26 06:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/
+---
+2012/03/26 11:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/
+---
+2012/03/26 11:34:44 [error] [exception.CException] exception 'CException' with message 'Контроллер SignupController не может найти представление "signup".' in /home/u229543015/public_html/framework/web/CController.php:879
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CController.php(783): CController->renderPartial('signup', Array, true)
+#1 /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php(18): CController->render('signup', Array)
+#2 /home/u229543015/public_html/framework/web/actions/CInlineAction.php(50): SignupController->actionIndex()
+#3 /home/u229543015/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/u229543015/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/u229543015/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/u229543015/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#7 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/signup')
+#8 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/u229543015/public_html/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/user/signup
+---
+2012/03/26 11:36:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/26 11:39:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/26 11:40:02 [warning] [application] Не удалось присвоить небезопасный атрибут "username" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (9)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 11:40:02 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (9)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 11:40:02 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (9)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 11:40:02 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "User.code".' in /home/u229543015/public_html/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/u229543015/public_html/framework/db/ar/CActiveRecord.php(160): CComponent->__set('code', NULL)
+#1 /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php(10): CActiveRecord->__set('code', NULL)
+#2 /home/u229543015/public_html/framework/web/actions/CInlineAction.php(50): SignupController->actionIndex()
+#3 /home/u229543015/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/u229543015/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/u229543015/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/u229543015/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#7 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/signup')
+#8 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/u229543015/public_html/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/user/signup
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/26 11:44:53 [warning] [application] Не удалось присвоить небезопасный атрибут "username" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (9)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 11:44:53 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (9)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 11:44:53 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (9)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 11:44:53 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "User.code".' in /home/u229543015/public_html/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/u229543015/public_html/framework/db/ar/CActiveRecord.php(160): CComponent->__set('code', NULL)
+#1 /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php(10): CActiveRecord->__set('code', NULL)
+#2 /home/u229543015/public_html/framework/web/actions/CInlineAction.php(50): SignupController->actionIndex()
+#3 /home/u229543015/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/u229543015/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/u229543015/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/u229543015/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#7 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/signup')
+#8 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/u229543015/public_html/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/user/signup
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/26 11:44:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/26 11:45:00 [warning] [application] Не удалось присвоить небезопасный атрибут "username" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (9)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 11:45:00 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (9)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 11:45:00 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (9)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 11:45:00 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "User.code".' in /home/u229543015/public_html/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/u229543015/public_html/framework/db/ar/CActiveRecord.php(160): CComponent->__set('code', NULL)
+#1 /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php(10): CActiveRecord->__set('code', NULL)
+#2 /home/u229543015/public_html/framework/web/actions/CInlineAction.php(50): SignupController->actionIndex()
+#3 /home/u229543015/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/u229543015/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/u229543015/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/u229543015/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#7 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/signup')
+#8 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/u229543015/public_html/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/user/signup
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/26 11:45:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/26 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/26 11:59:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/26 12:00:17 [warning] [application] Не удалось присвоить небезопасный атрибут "username" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:00:17 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:00:17 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:00:17 [warning] [application] Не удалось присвоить небезопасный атрибут "code" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:10:42 [warning] [application] Не удалось присвоить небезопасный атрибут "username" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:10:42 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:10:42 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:10:42 [warning] [application] Не удалось присвоить небезопасный атрибут "code" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:11:51 [warning] [application] Не удалось присвоить небезопасный атрибут "username" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:11:51 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:11:51 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:11:51 [warning] [application] Не удалось присвоить небезопасный атрибут "code" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:11:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/
+---
+2012/03/26 12:12:08 [warning] [application] Не удалось присвоить небезопасный атрибут "username" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:12:08 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:12:08 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 12:12:08 [warning] [application] Не удалось присвоить небезопасный атрибут "code" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/26 15:13:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/gii/default/login
+---
+2012/03/27 03:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/
+---
+2012/03/27 03:59:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/
+---
+2012/03/27 04:05:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/gii/default/login
+---
+2012/03/27 04:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/27 04:17:15 [warning] [application] Не удалось присвоить небезопасный атрибут "username" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/27 04:17:15 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/27 04:17:15 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/27 04:17:15 [warning] [application] Не удалось присвоить небезопасный атрибут "code" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/27 04:18:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/27 04:18:58 [warning] [application] Не удалось присвоить небезопасный атрибут "username" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/27 04:18:58 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/27 04:18:58 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/27 04:18:58 [warning] [application] Не удалось присвоить небезопасный атрибут "code" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/27 04:20:12 [warning] [application] Не удалось присвоить небезопасный атрибут "username" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/27 04:20:12 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/27 04:20:12 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/27 04:20:12 [warning] [application] Не удалось присвоить небезопасный атрибут "code" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (15)
+in /home/u229543015/public_html/index.php (13)
+2012/03/27 04:20:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 02:34:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 02:34:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 02:35:01 [warning] [application] Не удалось присвоить небезопасный атрибут "username" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 02:35:01 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 02:35:01 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 02:35:01 [warning] [application] Не удалось присвоить небезопасный атрибут "code" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 02:37:15 [warning] [application] Не удалось присвоить небезопасный атрибут "username" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 02:37:15 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 02:37:15 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 02:37:15 [warning] [application] Не удалось присвоить небезопасный атрибут "code" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 02:37:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 02:37:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 02:37:22 [warning] [application] Не удалось присвоить небезопасный атрибут "username" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 02:37:22 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 02:37:22 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 02:37:22 [warning] [application] Не удалось присвоить небезопасный атрибут "code" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 02:39:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 02:39:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 02:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/helper".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/helper')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/helper
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 02:43:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 02:43:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 04:29:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/login
+---
+2012/03/28 04:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/login
+---
+2012/03/28 04:51:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/login
+---
+2012/03/28 04:58:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/login
+---
+2012/03/28 04:58:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/login
+---
+2012/03/28 04:58:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/login
+---
+2012/03/28 05:12:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/login
+---
+2012/03/28 05:13:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/login
+---
+2012/03/28 05:14:18 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 05:14:18 [warning] [application] Не удалось присвоить небезопасный атрибут "code" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 05:14:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/helper".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/helper')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/helper
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 05:14:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/helper".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/helper')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/helper
+HTTP_REFERER=http://eromob.16mb.com/user/login
+---
+2012/03/28 05:14:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/helper".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/helper')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/helper
+HTTP_REFERER=http://eromob.16mb.com/user/login
+---
+2012/03/28 05:17:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/helper".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/helper')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/helper
+HTTP_REFERER=http://eromob.16mb.com/user/login
+---
+2012/03/28 05:17:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/helper
+---
+2012/03/28 05:17:32 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "User.hasErrors".' in /home/u229543015/public_html/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/u229543015/public_html/framework/db/ar/CActiveRecord.php(144): CComponent->__get('hasErrors')
+#1 /home/u229543015/public_html/protected/modules/user/models/User.php(130): CActiveRecord->__get('hasErrors')
+#2 /home/u229543015/public_html/framework/validators/CInlineValidator.php(43): User->authenticate('password', Array)
+#3 /home/u229543015/public_html/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(User), 'password')
+#4 /home/u229543015/public_html/framework/base/CModel.php(158): CValidator->validate(Object(User), NULL)
+#5 /home/u229543015/public_html/protected/modules/user/controllers/LoginController.php(13): CModel->validate()
+#6 /home/u229543015/public_html/framework/web/actions/CInlineAction.php(50): LoginController->actionIndex()
+#7 /home/u229543015/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /home/u229543015/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /home/u229543015/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/u229543015/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#11 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/login')
+#12 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/u229543015/public_html/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/user/login
+HTTP_REFERER=http://eromob.16mb.com/user/login
+---
+2012/03/28 05:18:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/favicon.ic...')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/login
+---
+2012/03/28 05:23:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 05:23:54 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 05:23:54 [warning] [application] Не удалось присвоить небезопасный атрибут "code" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 05:23:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/helper".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/helper')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/helper
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 05:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/u229543015/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/u229543015/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/u229543015/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/u229543015/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://eromob.16mb.com/user/signup
+---
+2012/03/28 05:28:10 [warning] [application] Не удалось присвоить небезопасный атрибут "email" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/28 05:28:10 [warning] [application] Не удалось присвоить небезопасный атрибут "code" класса "User".
+in /home/u229543015/public_html/protected/modules/user/controllers/SignupController.php (16)
+in /home/u229543015/public_html/index.php (13)
+2012/03/27 13:49:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in Z:\home\localhost\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\localhost\www\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 Z:\home\localhost\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\localhost\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/27 13:49:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in Z:\home\localhost\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\localhost\www\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 Z:\home\localhost\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\localhost\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/27 13:51:13 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: ���� ���� ����������.  (Z:\home\localhost\www\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 Z:\home\localhost\www\framework\db\ar\CActiveRecord.php(2263): User->getDbConnection()
+#6 Z:\home\localhost\www\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 Z:\home\localhost\www\framework\db\ar\CActiveRecord.php(394): model()
+#8 Z:\home\localhost\www\framework\db\ar\CActiveRecord.php(78): User->getMetaData()
+#9 Z:\home\localhost\www\protected\modules\user\controllers\SignupController.php(12): User->__construct()
+#10 Z:\home\localhost\www\framework\web\actions\CInlineAction.php(50): SignupController->actionIndex()
+#11 Z:\home\localhost\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 Z:\home\localhost\www\framework\web\CController.php(287): SignupController->runAction()
+#13 Z:\home\localhost\www\framework\web\CController.php(266): SignupController->runActionWithFilters()
+#14 Z:\home\localhost\www\framework\web\CWebApplication.php(276): SignupController->run()
+#15 Z:\home\localhost\www\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 Z:\home\localhost\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 Z:\home\localhost\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/user/signup
+in Z:\home\localhost\www\protected\modules\user\controllers\SignupController.php (12)
+in Z:\home\localhost\www\index.php (13)
+2012/04/23 21:49:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in W:\home\localhost\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\home\localhost\www\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 W:\home\localhost\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\home\localhost\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/23 21:51:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in W:\home\localhost\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\home\localhost\www\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 W:\home\localhost\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\home\localhost\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/23 21:51:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in W:\home\localhost\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\home\localhost\www\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 W:\home\localhost\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\home\localhost\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/23 21:52:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in W:\home\localhost\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\home\localhost\www\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 W:\home\localhost\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\home\localhost\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
